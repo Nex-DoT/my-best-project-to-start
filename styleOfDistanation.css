@@ -1,0 +1,113 @@
+body{
+    background: url(./assets/destination/WallpaperDog-10872958.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.destion{
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.destion span{
+    color: gray;
+    margin-right: 10px;
+}
+
+.cod{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    opacity: 0;
+    display: none;
+    transition: all 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation: mmd ease-in 1s;
+
+}
+@keyframes mmd{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.cod.active{
+    opacity: 1;
+    display: flex;
+}
+
+.cod div img{
+    width: 350px;
+    height: 350px;
+}
+.cod .text-2{
+    width: 300px;
+}
+.box-3 ul{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    right: 360px;
+
+}
+.box-3 ul li{
+    color: white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+
+}
+.box-3 ul li::after{
+    content: "";
+    width: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+
+}
+.box-3 ul li:hover::after{
+    width: 50px;
+}
+.box-3 ul li.active::after{
+    width: 50px;
+}
+.cod .text-2 .text-5 h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+.cod .text-2 .text-5 p{
+    color: gray;
+    margin: 10px 10px;
+    padding: 0 10px;
+}
+.cod .text-2 .long{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.cod .text-2 .text-5 h1{
+    transition: 0.3s all ease-in;
+}
+.cod .text-2 .text-5 h1:hover{
+    text-shadow: -6px 0px 2px rgba(255, 0, 0, 0.600),rgba(0, 255, 255, 0.600) 6px 0;
+}
+.cod .text-2 .long p{
+    margin: 10px 5px 0 0;
+    color: gray;
+}
+
+

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+.loading{
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   margin: 0;
+   padding: 0; 
+   top: 0;
+   z-index: 300;
+}
+.loading.active{
+    animation: loading 2s ease-in-out ;
+    animation-fill-mode: forwards;
+}
+@keyframes loading{
+    100%{opacity:0.0;display: none; visibility: hidden;}
+}
+.loading div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,2,32);
+}
+.loading div img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+body{
+   background: url(./assets/home/background-home-desktop.jpg);
+   background-size: cover;
+   justify-content: start;
+}
+.menu-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+.menu-box .img{
+    padding-left: 50px;
+}
+.menu-box .line{
+    position: fixed;
+    z-index: 100;
+    right: 530px;
+    height: 1px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.579);
+}
+.menu-box .menu ul{
+    display: flex;
+    list-style: none;
+    width: 550px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.185);
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(8px);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 black;
+    position: relative;
+}
+/* .menu-box .menu::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0.515);
+    transform:skewX(20deg);
+    transform-origin: top;
+    right: 125px;
+    
+} */
+.menu-box .menu ul li a {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.776);
+}
+.menu-box .menu ul li a::after{
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid white;
+    height: 1px;
+    bottom: -40;
+    right: 50%;
+    transform: translateX(50%);
+    width: 0;
+    transition: 0.3s all ease-in-out;
+}
+.menu-box .menu ul li a:hover::after{
+    width: 130%;
+    border-color: orange;
+}
+.menu-box .menu ul li .active::after{
+    width: 100%;
+}
+.section-1 {
+    margin-top: 250px;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+section .text{
+    width: 300px;
+}
+section .text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 29px;
+    transition: 0.5s all ease-in-out;
+    
+}
+section .text h1:hover{
+    text-shadow: -6px 0px 2px rgba(255, 0, 0, 0.600),rgba(0, 255, 255, 0.600) 6px 0;
+}
+section .EXPLORE a{
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.659);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:rgba(0, 0, 0, 0.707);
+    font-size: 40px;
+    font-family: 'Kenia', cursive;
+    box-shadow: 0 0 10px 0;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+section .EXPLORE a:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 30px 0 purple;
+
+}

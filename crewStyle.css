@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    background: url(./assets/crew/wp4729537-earth-4k-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-c{
+    margin: 30px 0;
+    color: white;
+}
+.sec-3{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.sec-3 div{
+    width: 300px;
+    height: 400px;
+}
+.sec-3 div img{
+    width: 100%;
+    height: 100%;  
+}
+.sec-3 .text{
+    width: 500px;
+    padding-top: 100px;
+}
+.sec-3 .text h1{
+    font-family: 'Righteous', cursive;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.sec-3 .text p{
+    color: rgb(189, 189, 189);
+    padding: 30px;
+    background-color: rgba(76, 76, 76, 0.824);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+hr{
+    border-top: 1px solid white;
+    border-right: none;
+    border-left: none;
+    border-bottom: none ;
+}
+.crew{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.303);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 white;
+    width: 100px;
+    height: 20px;
+    top: 90%;
+    left: 23%;
+    margin-top: 10px;
+}
+.crew div{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.569);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.crew div.active{
+    background-color: white;
+    opacity: 1;
+}
+.head-c{
+    padding-left: 30px ;
+}
+.head-c span{
+    color:  gray;
+}
+.head-c h1{
+    font-size: 35px;
+}
+
+#div-none{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+#div-none.active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: mmd 1s ease-in-out forwards;
+}
+@keyframes mmd {
+    0%{opacity: 0;margin-top: 30px;}
+    100%{opacity: 1; margin-top: 0;}
+}
+#slid-01{
+    height: 410px;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+}
+
+
+
